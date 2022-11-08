@@ -1,0 +1,246 @@
+@charset "UTF-8";
+:root {
+  --fuenteheading: "PT Sans", sans-serif;
+  --fuentreparrafos: "Open Sans", sans-serif;
+  --cafe: #784d3c;
+  --blanco: #ffffff;
+  --blancopastel_: #f0eeeb;
+  --negro: #000000;
+  --verdepastel: #56ff95;
+  --violetapastel: #D587FF;
+  --rosapastel: #FF82F7;
+  --doradopastel: #ffc349 ;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+/*Box model*/
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--fuentreparrafos);
+  line-height: 2;
+}
+
+/* Globales */
+.contenedor {
+  width: min(85%, 120rem);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--fuenteheading);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 2rem;
+  font-family: var(--fuentreparrafos);
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: rgb(247, 247, 247);
+  background: linear-gradient(270deg, rgb(247, 247, 247) 0%, rgb(255, 255, 255) 100%);
+}
+
+/* Utilidades */
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.padding-arriba {
+  padding-top: 5rem;
+}
+
+.centrar-texto {
+  text-align: center;
+}
+
+.margin1 {
+  margin: 1rem;
+}
+
+.marginarriba {
+  margin-top: 5rem;
+}
+
+.agrandar-texto {
+  font-size: 3rem;
+}
+
+/* Navegacion */
+.logo__nombre {
+  text-decoration: none;
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.navegacion_links {
+  font-size: 1.8rem;
+  color: var(--negro);
+}
+
+a:hover {
+  color: var(--rosapastel);
+}
+
+/* Banner */
+.banner {
+  width: 200rem;
+  height: 10rem;
+  background-image: url(../img/cake-balls-g26c22f96f_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  padding: auto;
+  max-width: 100%;
+  box-shadow: -1px -1px 30px 2px rgba(0, 0, 0, 0.61);
+}
+
+.texto-eslogan {
+  font-size: 3rem;
+}
+
+/* footer */
+.footer {
+  background-color: #FFEAE3;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.barra {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* index */
+.contenido-principal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 1rem;
+  margin: 2rem;
+  font-size: 2rem;
+}
+
+/* productos */
+.imagenes {
+  max-width: 100%;
+  width: 30rem;
+  height: 20rem;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  margin: 1.5rem;
+}
+
+/* Nosotros */
+.imagen {
+  max-width: 100%;
+  width: 200rem;
+  height: 50rem;
+}
+
+/* Pedidos */
+.contacto {
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: medium;
+}
+
+.formulario {
+  background-color: var(--blanco);
+  margin: -5rem auto 0 auto;
+  width: 95%;
+  padding: 5rem;
+}
+
+.campo {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.campo__label {
+  flex: 0 0 8rem;
+  text-align: right;
+}
+
+.campo__field {
+  flex: 1;
+  border: 1px solid grey;
+}
+
+.campo__field--textarea {
+  height: 20rem;
+}
+
+.boton {
+  background-color: var(--verdepastel);
+  color: var(--negro);
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5rem;
+  border: none;
+}
+
+.boton:hover {
+  cursor: pointer;
+}
+
+/* ¿Que usamos? */
+.ingredientes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  margin: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
